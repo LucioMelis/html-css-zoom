@@ -8,6 +8,14 @@
 div a{
     text-decoration: none;
 }
+
+.flex{
+    display: flex;
+}
+
+#flex{
+    display: flex;
+}
 /************ MAIN  **********/
 #container-main{
     height: 90vh;
@@ -16,9 +24,11 @@ div a{
 }
 
 .container-position{
-    position: absolute;
-    top: 10px;
-    right: 20px;
+    text-align: right;
+    padding-top: 5px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .button{
@@ -32,7 +42,14 @@ div a{
     font-size: 18px;
 }
 
-
+.box-image{
+    height: 200px;
+    width: 300px;
+    position: relative;
+    background-image: url(https://picsum.photos/id/237/200/300);
+    background-size: cover;
+    background-position: center;
+}
 
 
 /*********** FOOTER  **********/
