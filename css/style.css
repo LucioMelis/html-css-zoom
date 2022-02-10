@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
+    font-family: sans-serif;
 }
 
 div a{
@@ -13,9 +14,6 @@ div a{
     display: flex;
 }
 
-#flex{
-    display: flex;
-}
 /************ MAIN  **********/
 #container-main{
     height: 90vh;
@@ -43,17 +41,95 @@ div a{
 }
 
 .box-image{
-    height: 200px;
-    width: 300px;
+    height: 15vh;
     position: relative;
-    background-image: url(https://picsum.photos/id/237/200/300);
+    background-color: blue;
+    background-image: url(https://picsum.photos/seed/picsum/800/550);
     background-size: cover;
     background-position: center;
 }
 
+#container-principal .box-image p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 5px;
+}
+
+#container-principal{
+    padding-top: 20px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-between;
+}
+
+#container-principal > *{
+    width: calc(100% / 7 - 5px);
+}
 
 /*********** FOOTER  **********/
 #container-footer{
     height: 10vh;
     background-color: #222222;
+    display: flex;
+}
+
+.grow-left, .grow-right{
+    flex-grow: 1;
+}
+
+.grow-center{
+    flex-grow: 2;
+}
+
+/* container footer rules  */
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.container i{
+    font-size: 25px;
+}
+
+.icon i{
+    font-size: 12px;
+}
+
+.container > *{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-space{
+    justify-content: space-between;
+}
+
+.flex-end{
+    justify-content: flex-end;
+}
+
+.flex-end a{
+    background-color: grey;
+    padding: 0 20px;
+    color: red;
+    line-height: 10vh;
+    font-weight: bold;
+}
+
+.grow-left div{
+    padding-right: 10px;
+}
+
+.container div i{
+    padding-bottom: 5px;
+}
+
+.green{
+    color: green;
 }
